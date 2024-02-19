@@ -33,8 +33,8 @@ class _SplashScreenState extends State<SplashScreen> {
               fontSize: 20,
               color: Colors.white,
             ),
-            textAlign: TextAlign.center,
           ),
+          centerTitle: true,
         ),
         body: SafeArea(
           child: Column(
@@ -85,7 +85,8 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, RegisterPage.routeName);
+                  Navigator.pushReplacementNamed(
+                      context, RegisterPage.routeName);
                 },
                 child: Text(
                   "Get Started",
@@ -105,9 +106,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    
-                  ],
+                  children: [],
                 ),
               )
             ],

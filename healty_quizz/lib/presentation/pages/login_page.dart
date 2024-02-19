@@ -1,26 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:healty_quizz/presentation/pages/home_page.dart';
-import 'package:healty_quizz/presentation/pages/login_page.dart';
 
-class RegisterPage extends StatefulWidget {
-  static const routeName = '/register-page';
-  const RegisterPage({super.key});
+class LoginPage extends StatefulWidget {
+  static const routeName = '/login-page';
+  const LoginPage({super.key});
 
   @override
-  State<RegisterPage> createState() => _RegisterPageState();
+  State<LoginPage> createState() => _LoginPageState();
 }
 
-class _RegisterPageState extends State<RegisterPage> {
+class _LoginPageState extends State<LoginPage> {
   final TextEditingController _username = TextEditingController();
-  final TextEditingController _email = TextEditingController();
   final TextEditingController _password = TextEditingController();
+  final TextEditingController _verifypassword = TextEditingController();
 
   void dispose() {
     super.dispose();
     _username.dispose();
-    _email.dispose();
     _password.dispose();
+    _verifypassword.dispose();
   }
 
   @override
@@ -31,7 +30,7 @@ class _RegisterPageState extends State<RegisterPage> {
       appBar: AppBar(
         backgroundColor: Color(0xff28DF99),
         title: Text(
-          "Register",
+          "Login",
           style: GoogleFonts.poppins(
             fontSize: 20,
             color: Colors.white,
@@ -69,18 +68,8 @@ class _RegisterPageState extends State<RegisterPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Already registered?",
+                  "Sign in to continue",
                   style: GoogleFonts.poppins(color: Colors.black, fontSize: 14),
-                ),
-                TextButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, LoginPage.routeName);
-                  },
-                  child: Text(
-                    "Login",
-                    style: GoogleFonts.poppins(
-                        color: Colors.black, fontWeight: FontWeight.bold),
-                  ),
                 ),
               ],
             ),
@@ -94,7 +83,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 child: TextField(
                   controller: _username,
                   decoration: InputDecoration(
-                    hintText: 'username',
+                    hintText: 'Username',
                     hintStyle: GoogleFonts.poppins(
                       fontSize: 12,
                       fontWeight: FontWeight.w600,
@@ -119,9 +108,9 @@ class _RegisterPageState extends State<RegisterPage> {
               child: SizedBox(
                 height: 40,
                 child: TextField(
-                  controller: _email,
+                  controller: _password,
                   decoration: InputDecoration(
-                    hintText: 'email',
+                    hintText: 'Password',
                     hintStyle: GoogleFonts.poppins(
                       fontSize: 12,
                       fontWeight: FontWeight.w600,
@@ -146,9 +135,9 @@ class _RegisterPageState extends State<RegisterPage> {
               child: SizedBox(
                 height: 40,
                 child: TextField(
-                  controller: _password,
+                  controller: _verifypassword,
                   decoration: InputDecoration(
-                    hintText: 'password',
+                    hintText: 'Verify Password',
                     hintStyle: GoogleFonts.poppins(
                       fontSize: 12,
                       fontWeight: FontWeight.w600,
@@ -176,7 +165,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 Navigator.pushReplacementNamed(context, HomePage.routeName);
               },
               child: Text(
-                "SIGN UP",
+                "LOGIN",
                 style: GoogleFonts.openSans(
                     fontWeight: FontWeight.w700,
                     color: Colors.black,

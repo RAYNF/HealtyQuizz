@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:healty_quizz/presentation/pages/home_page.dart';
+import 'package:healty_quizz/presentation/pages/login_page.dart';
 import 'package:healty_quizz/presentation/pages/register_page.dart';
 import 'package:healty_quizz/presentation/pages/splashscreen_page.dart';
 
@@ -14,10 +16,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      initialRoute: RegisterPage.routeName,
+      initialRoute: HomePage.routeName,
       routes: {
         SplashScreen.routeName: (context) => SplashScreen(),
-        RegisterPage.routeName: (context) => RegisterPage()
+        RegisterPage.routeName: (context) => RegisterPage(),
+        LoginPage.routeName: (context) => LoginPage(),
+        HomePage.routeName: (context) => HomePage(),
+        
       },
     );
   }
