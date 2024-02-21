@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:healty_quizz/presentation/pages/profile_page.dart';
+import 'package:healty_quizz/presentation/pages/leaderboard_page.dart';
+import 'package:healty_quizz/presentation/pages/profil_page.dart';
 
 class HomePage extends StatefulWidget {
   static const routeName = '/home-page';
@@ -45,7 +46,7 @@ class _HomePageState extends State<HomePage> {
                 height: screenWidth.height / 3.5,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Colors.amber),
+                    color: Color(0xff00BF63)),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -80,10 +81,15 @@ class _HomePageState extends State<HomePage> {
                                         ),
                                         IconButton(
                                           onPressed: () {
-                                            Navigator.pushNamed(context, ProfilePage.routeName);
+                                            Navigator.pushNamed(
+                                                context, ProfilPage.routeName);
                                           },
-                                          icon: Icon(Icons.arrow_right,
-                                              color: Color(0xff00BF63)),
+                                          icon: Icon(
+                                            Icons.arrow_right,
+                                            color: Color.fromARGB(
+                                                255, 250, 250, 250),
+                                            size: 30,
+                                          ),
                                         )
                                       ],
                                     ),
@@ -216,7 +222,9 @@ class _HomePageState extends State<HomePage> {
                 mainAxisSpacing: 10,
                 children: [
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, LeaderboardPage.routeName);
+                    },
                     child: Container(
                       padding: const EdgeInsets.all(9),
                       color: Color(0xffF6F7D4),
@@ -243,7 +251,7 @@ class _HomePageState extends State<HomePage> {
                     onTap: () {},
                     child: Container(
                       padding: const EdgeInsets.all(9),
-                       color: Color(0xffF6F7D4),
+                      color: Color(0xffF6F7D4),
                       child: Column(
                         children: [
                           Icon(
@@ -291,7 +299,7 @@ class _HomePageState extends State<HomePage> {
                     onTap: () {},
                     child: Container(
                       padding: const EdgeInsets.all(9),
-                     color: Color(0xffF6F7D4),
+                      color: Color(0xffF6F7D4),
                       child: Column(
                         children: [
                           Icon(

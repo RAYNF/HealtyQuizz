@@ -45,9 +45,8 @@ class _LoginPageState extends State<LoginPage> {
             Container(
               width: screenWidth.width,
               height: screenWidth.height / 3,
-              color: Colors.amber,
               child: Image.asset(
-                'assets/gambar_splash_screen.jpeg',
+                'assets/register_image.png',
                 fit: BoxFit.fitHeight,
               ),
             ),

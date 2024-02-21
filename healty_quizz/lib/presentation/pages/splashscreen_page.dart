@@ -1,23 +1,10 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:healty_quizz/presentation/pages/register_page.dart';
 
-class SplashScreen extends StatefulWidget {
-  static const routeName = '/home-page';
+class SplashScreen extends StatelessWidget {
+  static const routeName = '/splash-screen';
   const SplashScreen({super.key});
-
-  @override
-  State<SplashScreen> createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen> {
-  // void initState() {
-  //   Timer(Duration(seconds: 3), () {
-  //     Navigator.pushNamed(context, RegisterPage.routeName);
-  //   });
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +29,6 @@ class _SplashScreenState extends State<SplashScreen> {
               Container(
                 width: screenWidth.width,
                 height: screenWidth.height / 2.5,
-                color: Colors.amber,
                 child: Image.asset(
                   'assets/gambar_splash_screen.jpeg',
                   fit: BoxFit.fitHeight,
@@ -99,16 +85,6 @@ class _SplashScreenState extends State<SplashScreen> {
                     backgroundColor: Color(0xff00BF63),
                     padding: EdgeInsets.symmetric(horizontal: 50)),
               ),
-              SizedBox(
-                height: 20,
-              ),
-              Positioned(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [],
-                ),
-              )
             ],
           ),
         ));
