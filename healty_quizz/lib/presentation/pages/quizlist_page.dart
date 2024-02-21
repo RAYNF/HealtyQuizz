@@ -28,9 +28,12 @@ class QuizList extends StatelessWidget {
           children: [
             Row(
               children: [
-                CircleAvatar(
-                  backgroundImage: AssetImage("assets/guest.png"),
-                  radius: 30,
+                Container(
+                  width: 30,
+                  child: Image(
+                    image: AssetImage("assets/guest.png"),
+                    fit: BoxFit.fill,
+                  ),
                 ),
                 SizedBox(
                   width: 10,
@@ -38,40 +41,45 @@ class QuizList extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    Text(
+                      "Username",
+                      style: GoogleFonts.openSans(
+                          fontWeight: FontWeight.w700,
+                          fontSize: 16.8,
+                          color: Colors.black),
+                    ),
                     Row(
                       children: [
-                        Text(
-                          "Username",
-                          style: GoogleFonts.openSans(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 16.8,
-                              color: Colors.black),
+                        CircleAvatar(
+                          backgroundColor: Color.fromARGB(255, 122, 194, 28),
+                          radius: 4,
                         ),
                         SizedBox(
-                          width: 20,
+                          width: 5,
                         ),
-                        IconButton(
-                          onPressed: () {
-                            Navigator.pushNamed(context, ProfilPage.routeName);
-                          },
-                          icon: Icon(
-                            Icons.arrow_right,
-                            color: Color.fromARGB(255, 250, 250, 250),
-                            size: 30,
-                          ),
+                        Text(
+                          "Online",
+                          style: GoogleFonts.openSans(
+                              fontSize: 11.4,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w400),
                         )
                       ],
                     ),
-                    Text(
-                      "Email",
-                      style: GoogleFonts.openSans(
-                          fontSize: 11.4,
-                          color: Colors.black,
-                          fontWeight: FontWeight.w400),
-                    )
                   ],
                 )
               ],
+            ),
+            SizedBox(
+              height: 40,
+            ),
+            Text(
+              "Quizizz List",
+              style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.bold, fontSize: 12),
+            ),
+            SizedBox(
+              height: 30,
             ),
           ],
         ),
