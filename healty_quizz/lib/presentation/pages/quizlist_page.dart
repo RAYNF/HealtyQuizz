@@ -14,7 +14,7 @@ class QuizList extends StatelessWidget {
         backgroundColor: Color(0xff28DF99),
         centerTitle: true,
         title: Text(
-          'Leaderboard',
+          'Quizizz List',
           style: GoogleFonts.poppins(
             fontSize: 20,
             color: Colors.white,
@@ -81,9 +81,286 @@ class QuizList extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
+            //list
+            ListTile(
+              tileColor: Color(0xffD2F6C5),
+              leading: InkWell(
+                onTap: () {},
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Color(0xff00BF63),
+                      borderRadius: BorderRadius.circular(10)),
+                  width: 40,
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Icon(
+                      Icons.task,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+              title: Text(
+                "Quizizz 1",
+                style: GoogleFonts.poppins(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.black),
+              ),
+              subtitle: Text(
+                "Topic : Input Topic 2",
+                style: GoogleFonts.poppins(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.black),
+              ),
+              trailing: InkWell(
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Color(0xff00BF63),
+                      borderRadius: BorderRadius.circular(10)),
+                  width: 40,
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Icon(
+                      Icons.arrow_forward_ios,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Divider(
+              thickness: 2,
+              height: 10,
+              color: Color(0xff00BF63),
+            ),
+            ListTile(
+              tileColor: Color(0xffD2F6C5),
+              leading: InkWell(
+                onTap: () {},
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Color(0xff00BF63),
+                      borderRadius: BorderRadius.circular(10)),
+                  width: 40,
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Icon(
+                      Icons.task,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+              title: Text(
+                "Quizizz 1",
+                style: GoogleFonts.poppins(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.black),
+              ),
+              subtitle: Text(
+                "Topic : Input Topic 2",
+                style: GoogleFonts.poppins(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.black),
+              ),
+              trailing: InkWell(
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Color(0xff00BF63),
+                      borderRadius: BorderRadius.circular(10)),
+                  width: 40,
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Icon(
+                      Icons.arrow_forward_ios,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Divider(
+              thickness: 2,
+              height: 10,
+              color: Color(0xff00BF63),
+            ),
+            ListTile(
+              tileColor: Color(0xffD2F6C5),
+              leading: InkWell(
+                onTap: () {},
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Color(0xff00BF63),
+                      borderRadius: BorderRadius.circular(10)),
+                  width: 40,
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Icon(
+                      Icons.task,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+              title: Text(
+                "Quizizz 1",
+                style: GoogleFonts.poppins(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.black),
+              ),
+              subtitle: Text(
+                "Topic : Input Topic 2",
+                style: GoogleFonts.poppins(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.black),
+              ),
+              trailing: InkWell(
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Color(0xff00BF63),
+                      borderRadius: BorderRadius.circular(10)),
+                  width: 40,
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Icon(
+                      Icons.arrow_forward_ios,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Divider(
+              thickness: 2,
+              height: 10,
+              color: Color(0xff00BF63),
+            ),
+            ListTile(
+              tileColor: Color(0xffD2F6C5),
+              leading: InkWell(
+                onTap: () {},
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Color(0xff00BF63),
+                      borderRadius: BorderRadius.circular(10)),
+                  width: 40,
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Icon(
+                      Icons.task,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+              title: Text(
+                "Quizizz 1",
+                style: GoogleFonts.poppins(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.black),
+              ),
+              subtitle: Text(
+                "Topic : Input Topic 2",
+                style: GoogleFonts.poppins(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.black),
+              ),
+              trailing: InkWell(
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Color(0xff00BF63),
+                      borderRadius: BorderRadius.circular(10)),
+                  width: 40,
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Icon(
+                      Icons.arrow_forward_ios,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Divider(
+              thickness: 2,
+              height: 10,
+              color: Color(0xff00BF63),
+            ),
+            ListTile(
+              tileColor: Color(0xffD2F6C5),
+              leading: InkWell(
+                onTap: () {},
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Color(0xff00BF63),
+                      borderRadius: BorderRadius.circular(10)),
+                  width: 40,
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Icon(
+                      Icons.task,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+              title: Text(
+                "Quizizz 1",
+                style: GoogleFonts.poppins(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.black),
+              ),
+              subtitle: Text(
+                "Topic : Input Topic 2",
+                style: GoogleFonts.poppins(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.black),
+              ),
+              trailing: InkWell(
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Color(0xff00BF63),
+                      borderRadius: BorderRadius.circular(10)),
+                  width: 40,
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Icon(
+                      Icons.arrow_forward_ios,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Divider(
+              thickness: 2,
+              height: 10,
+              color: Color(0xff00BF63),
+            )
           ],
         ),
       )),
+    );
+  }
+}
+
+class ListQuizz extends StatelessWidget {
+  const ListQuizz({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [],
     );
   }
 }
