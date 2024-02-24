@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:healty_quizz/presentation/pages/home_page.dart';
-import 'package:healty_quizz/presentation/pages/leaderboard_page.dart';
+import 'package:healty_quizz/presentation/pages/user/home_user_page.dart';
+import 'package:healty_quizz/presentation/pages/user/leaderboard_user_page.dart';
 import 'package:healty_quizz/presentation/pages/login_page.dart';
 import 'package:healty_quizz/presentation/pages/profil_page.dart';
 import 'package:healty_quizz/presentation/pages/quizlist_page.dart';
+import 'package:healty_quizz/presentation/pages/admin/quizseting_page.dart';
 
 import 'package:healty_quizz/presentation/pages/register_page.dart';
 import 'package:healty_quizz/presentation/pages/splashscreen_page.dart';
+import 'package:healty_quizz/presentation/pages/user/quiz_user_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      initialRoute: QuizList.routeName,
+      initialRoute: SplashScreen.routeName,
       routes: {
         SplashScreen.routeName: (context) => SplashScreen(),
         RegisterPage.routeName: (context) => RegisterPage(),
@@ -28,7 +30,9 @@ class MyApp extends StatelessWidget {
         HomePage.routeName: (context) => HomePage(),
         ProfilPage.routeName: (context) => ProfilPage(),
         LeaderboardPage.routeName: (context) => LeaderboardPage(),
-        QuizList.routeName: (context) => QuizList()
+        QuizList.routeName: (context) => QuizList(),
+        QuizSeting.routeName: (context) => QuizSeting(),
+        QuizPage.routeName: (context) => QuizPage()
       },
     );
   }

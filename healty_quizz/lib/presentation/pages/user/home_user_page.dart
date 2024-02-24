@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:healty_quizz/presentation/pages/leaderboard_page.dart';
+import 'package:healty_quizz/presentation/pages/user/leaderboard_user_page.dart';
 import 'package:healty_quizz/presentation/pages/profil_page.dart';
+import 'package:healty_quizz/presentation/pages/quizlist_page.dart';
 
 class HomePage extends StatefulWidget {
   static const routeName = '/home-page';
@@ -85,7 +86,7 @@ class _HomePageState extends State<HomePage> {
                                                 context, ProfilPage.routeName);
                                           },
                                           icon: Icon(
-                                            Icons.arrow_right,
+                                            Icons.arrow_forward_ios,
                                             color: Color.fromARGB(
                                                 255, 250, 250, 250),
                                             size: 30,
@@ -248,7 +249,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, QuizList.routeName);
+                    },
                     child: Container(
                       padding: const EdgeInsets.all(9),
                       color: Color(0xffF6F7D4),
@@ -337,7 +340,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                     
+                    },
                     child: Text(
                       "Show All",
                       style: GoogleFonts.poppins(
