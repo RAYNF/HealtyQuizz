@@ -55,7 +55,7 @@ class _HomeMainState extends State<HomeMain> {
 
   Future<void> _registeradmin() async {
     String Url =
-        "http://192.168.67.214/belajar/HiTech-hmti2024/frontend/HealtyQuizz-main/healty_quizz/lib/data/register_admin.php";
+        "http://192.168.67.214/belajar/HealtyQuizz/frontend/HealtyQuizz-main/healty_quizz/lib/data/register_admin.php";
     final response = await http.post(Uri.parse(Url), body: {
       "username": widget.username,
       "id": widget.id,

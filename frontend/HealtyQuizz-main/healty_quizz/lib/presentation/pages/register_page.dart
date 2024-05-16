@@ -22,7 +22,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
   Future<void> _register() async {
     String Url =
-        "http://192.168.67.214/belajar/HiTech-hmti2024/frontend/HealtyQuizz-main/healty_quizz/lib/data/register.php";
+        "http://192.168.67.214/belajar/HealtyQuizz/frontend/HealtyQuizz-main/healty_quizz/lib/data/register.php";
     final response = await http.post(Uri.parse(Url), body: {
       "username": _username.text,
       "password": _password.text,
